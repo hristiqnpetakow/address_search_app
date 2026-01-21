@@ -1,0 +1,113 @@
+/* Main */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("/assets/earth-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive - смяна на снимка при мобилно устройство */
+@media (max-width: 768px) {
+  body {
+    background-image: url("/assets/earth-mobile.jpg");
+  }
+}
+
+.wrapper {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(24, 22, 22, 0.3);
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .head-title {
+    font-size: 1.4rem;
+  }
+
+  .arrow {
+    font-size: 1.8rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  text-align: center;
+}
+
+.head-title {
+  margin: 3px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input-f {
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+  margin-top: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.res-title {
+  margin-bottom: 6px;
+}
+
+.result-item {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.arrow {
+  margin: 0 0 6px 0;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.loading-container {
+  display: none;
+}
+
+/* Suggestions */
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #e0e0e0;
+}
+
+.suggestion-item.active {
+  background-color: #e0e0e0;
+}

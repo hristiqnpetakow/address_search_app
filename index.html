@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адресатор</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="head-title">Адресатор</h1>
+        <h2>Адресът, който търсиш – за секунди</h2>
+      </header>
+      <main>
+        <!-- Search section -->
+        <section class="search-container">
+          <label for="address"> Въведете адрес:</label>
+          <div>
+            <input
+              class="input-f"
+              type="text"
+              name=""
+              id="address"
+              placeholder="Например Plovdiv, Bulgaria"
+            />
+            <div id="loading" class="loading-container">Зареждане...</div>
+            <div id="suggestions-container"></div>
+          </div>
+        </section>
+
+        <!-- Results section -->
+        <section class="result-container">
+          <h2 id="results-title" class="res-title hidden">
+            Резултати от търсенето
+          </h2>
+          <p id="arrow-res" class="arrow hidden">⇓</p>
+          <div id="results-container"></div>
+        </section>
+      </main>
+    </div>
+    <script src="/script/app.js" type="module"></script>
+  </body>
+</html>
